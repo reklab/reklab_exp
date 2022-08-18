@@ -1,0 +1,1387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<SubSystem>
+		<Name>Scope (xPC) 1</Name>
+		<xPCName>AimIII/Scope (xPC) 1</xPCName>
+	</SubSystem>
+	<SubSystem>
+		<Name>Servo
+Controller</Name>
+		<xPCName>AimIII/Servo Controller</xPCName>
+		<SubSystem>
+			<Name>Sample
+and Hold</Name>
+			<xPCName>AimIII/Servo Controller/Sample and Hold</xPCName>
+			<block>
+				<blkName>
+				</blkName>
+				<xpcblkName>Servo Controller/Sample and Hold/ </xpcblkName>
+				<SLblockPath>AimIII/Servo Controller/Sample and Hold/ </SLblockPath>
+				<isSrc>[0 1 0]</isSrc>
+				<parameter>
+					<paramName>InitialOutput</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<signal>
+				<sigName>In</sigName>
+				<xpcsigName>Servo Controller/Sample and Hold/In</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+		</SubSystem>
+		<block>
+			<blkName>Dead Zone</blkName>
+			<xpcblkName>Servo Controller/Dead Zone</xpcblkName>
+			<SLblockPath>AimIII/Servo Controller/Dead Zone</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>LowerValue</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>UpperValue</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>D</blkName>
+			<xpcblkName>Servo Controller/D</xpcblkName>
+			<SLblockPath>AimIII/Servo Controller/D</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>Gain</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>I</blkName>
+			<xpcblkName>Servo Controller/I</xpcblkName>
+			<SLblockPath>AimIII/Servo Controller/I</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>Gain</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>P</blkName>
+			<xpcblkName>Servo Controller/P</xpcblkName>
+			<SLblockPath>AimIII/Servo Controller/P</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>Gain</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>ddt_gain</blkName>
+			<xpcblkName>Servo Controller/ddt_gain</xpcblkName>
+			<SLblockPath>AimIII/Servo Controller/ddt_gain</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>Gain</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>didder_gain</blkName>
+			<xpcblkName>Servo Controller/didder_gain</xpcblkName>
+			<SLblockPath>AimIII/Servo Controller/didder_gain</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>Gain</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Integrator</blkName>
+			<xpcblkName>Servo Controller/Integrator</xpcblkName>
+			<SLblockPath>AimIII/Servo Controller/Integrator</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>InitialCondition</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>UpperSaturationLimit</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>LowerSaturationLimit</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Saturation</blkName>
+			<xpcblkName>Servo Controller/Saturation</xpcblkName>
+			<SLblockPath>AimIII/Servo Controller/Saturation</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>UpperLimit</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>LowerLimit</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Saturation1</blkName>
+			<xpcblkName>Servo Controller/Saturation1</xpcblkName>
+			<SLblockPath>AimIII/Servo Controller/Saturation1</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>UpperLimit</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>LowerLimit</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Saturation2</blkName>
+			<xpcblkName>Servo Controller/Saturation2</xpcblkName>
+			<SLblockPath>AimIII/Servo Controller/Saturation2</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>UpperLimit</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>LowerLimit</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>N-Sample
+Enable1</blkName>
+			<xpcblkName>Servo Controller/N-Sample Enable1</xpcblkName>
+			<SLblockPath>AimIII/Servo Controller/N-Sample Enable1</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>TARGETCNT</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>ACTLEVEL</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Cut-off 1 Hz1</blkName>
+			<xpcblkName>Servo Controller/Cut-off 1 Hz1</xpcblkName>
+			<SLblockPath>AimIII/Servo Controller/Cut-off 1 Hz1</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>A</paramName>
+				<dim>[3, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>B</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>C</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>X0</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Cut-off 35 Hz</blkName>
+			<xpcblkName>Servo Controller/Cut-off 35 Hz</xpcblkName>
+			<SLblockPath>AimIII/Servo Controller/Cut-off 35 Hz</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>A</paramName>
+				<dim>[19, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>B</paramName>
+				<dim>[3, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>C</paramName>
+				<dim>[5, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>D</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>X0</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Uniform Random
+Number 0.1 ms</blkName>
+			<xpcblkName>Servo Controller/Uniform Random Number 0.1 ms</xpcblkName>
+			<SLblockPath>AimIII/Servo Controller/Uniform Random Number 0.1 ms</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Minimum</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>Maximum</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>Seed</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<signal>
+			<sigName>Dead Zone</sigName>
+			<xpcsigName>Servo Controller/Dead Zone</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Derivative</sigName>
+			<xpcsigName>Servo Controller/Derivative</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Derivative1</sigName>
+			<xpcsigName>Servo Controller/Derivative1</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>D</sigName>
+			<xpcsigName>Servo Controller/D</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>I</sigName>
+			<xpcsigName>Servo Controller/I</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>P</sigName>
+			<xpcsigName>Servo Controller/P</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>ddt_gain</sigName>
+			<xpcsigName>Servo Controller/ddt_gain</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>didder_gain</sigName>
+			<xpcsigName>Servo Controller/didder_gain</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Integrator</sigName>
+			<xpcsigName>Servo Controller/Integrator</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Saturation</sigName>
+			<xpcsigName>Servo Controller/Saturation</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Saturation1</sigName>
+			<xpcsigName>Servo Controller/Saturation1</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Saturation2</sigName>
+			<xpcsigName>Servo Controller/Saturation2</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>N-Sample
+Enable1</sigName>
+			<xpcsigName>Servo Controller/N-Sample Enable1</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Cut-off 1 Hz1</sigName>
+			<xpcsigName>Servo Controller/Cut-off 1 Hz1</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Cut-off 35 Hz</sigName>
+			<xpcsigName>Servo Controller/Cut-off 35 Hz</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Sum</sigName>
+			<xpcsigName>Servo Controller/Sum</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Sum1</sigName>
+			<xpcsigName>Servo Controller/Sum1</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Sum2</sigName>
+			<xpcsigName>Servo Controller/Sum2</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Sum3</sigName>
+			<xpcsigName>Servo Controller/Sum3</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Sum5</sigName>
+			<xpcsigName>Servo Controller/Sum5</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Uniform Random
+Number 0.1 ms</sigName>
+			<xpcsigName>Servo Controller/Uniform Random Number 0.1 ms</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+	</SubSystem>
+	<SubSystem>
+		<Name>Trigger Data
+Acquisition</Name>
+		<xPCName>AimIII/Trigger Data Acquisition</xPCName>
+		<SubSystem>
+			<Name>N-Sample
+Switch</Name>
+			<xPCName>AimIII/Trigger Data Acquisition/N-Sample Switch</xPCName>
+			<block>
+				<blkName>N-Sample
+Enable</blkName>
+				<xpcblkName>Trigger Data Acquisition/N-Sample Switch/N-Sample Enable</xpcblkName>
+				<SLblockPath>AimIII/Trigger Data Acquisition/N-Sample Switch/N-Sample Enable</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>TARGETCNT</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+				<parameter>
+					<paramName>ACTLEVEL</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<signal>
+				<sigName>N-Sample
+Enable</sigName>
+				<xpcsigName>Trigger Data Acquisition/N-Sample Switch/N-Sample Enable</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Switch</sigName>
+				<xpcsigName>Trigger Data Acquisition/N-Sample Switch/Switch</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+		</SubSystem>
+		<block>
+			<blkName>Constant1</blkName>
+			<xpcblkName>Trigger Data Acquisition/Constant1</xpcblkName>
+			<SLblockPath>AimIII/Trigger Data Acquisition/Constant1</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Constant2</blkName>
+			<xpcblkName>Trigger Data Acquisition/Constant2</xpcblkName>
+			<SLblockPath>AimIII/Trigger Data Acquisition/Constant2</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Hearbeat</blkName>
+			<xpcblkName>Trigger Data Acquisition/Hearbeat</xpcblkName>
+			<SLblockPath>AimIII/Trigger Data Acquisition/Hearbeat</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Amplitude</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>Period</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>PulseWidth</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>PhaseDelay</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Memory7</blkName>
+			<xpcblkName>Trigger Data Acquisition/Memory7</xpcblkName>
+			<SLblockPath>AimIII/Trigger Data Acquisition/Memory7</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>X0</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>PCIM-DDA06 16 1</blkName>
+			<xpcblkName>Trigger Data Acquisition/PCIM-DDA06 16 1</xpcblkName>
+			<SLblockPath>AimIII/Trigger Data Acquisition/PCIM-DDA06 16 1</SLblockPath>
+			<isSrc>[0 2 0]</isSrc>
+			<parameter>
+				<paramName>P1</paramName>
+				<dim>[1, 2]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P2</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P3</paramName>
+				<dim>[1, 2]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P4</paramName>
+				<dim>[1, 2]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P5</paramName>
+				<dim>[1, 3]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P6</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P7</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P8</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P9</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P10</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Switch</blkName>
+			<xpcblkName>Trigger Data Acquisition/Switch</xpcblkName>
+			<SLblockPath>AimIII/Trigger Data Acquisition/Switch</SLblockPath>
+			<isSrc>[0 3 1]</isSrc>
+			<parameter>
+				<paramName>Threshold</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<signal>
+			<sigName>Hearbeat</sigName>
+			<xpcsigName>Trigger Data Acquisition/Hearbeat</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Memory7</sigName>
+			<xpcsigName>Trigger Data Acquisition/Memory7</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Product1</sigName>
+			<xpcsigName>Trigger Data Acquisition/Product1</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Switch</sigName>
+			<xpcsigName>Trigger Data Acquisition/Switch</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+	</SubSystem>
+	<SubSystem>
+		<Name>Visual Feedback Controller</Name>
+		<xPCName>AimIII/Visual Feedback Controller</xPCName>
+		<SubSystem>
+			<Name>Data to TWITCH</Name>
+			<xPCName>AimIII/Visual Feedback Controller/Data to TWITCH</xPCName>
+			<block>
+				<blkName>Send</blkName>
+				<xpcblkName>Visual Feedback Controller/Data to TWITCH/Send</xpcblkName>
+				<SLblockPath>AimIII/Visual Feedback Controller/Data to TWITCH/Send</SLblockPath>
+				<isSrc>[0 1 0]</isSrc>
+				<parameter>
+					<paramName>P1</paramName>
+					<dim>[1, 14]</dim>
+				</parameter>
+				<parameter>
+					<paramName>P2</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+				<parameter>
+					<paramName>P3</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+				<parameter>
+					<paramName>P4</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+				<parameter>
+					<paramName>P5</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<signal>
+				<sigName>Rate Transition</sigName>
+				<xpcsigName>Visual Feedback Controller/Data to TWITCH/Rate Transition</xpcsigName>
+				<sigWidth>16</sigWidth>
+				<sigDim>[16, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Pack</sigName>
+				<xpcsigName>Visual Feedback Controller/Data to TWITCH/Pack</xpcsigName>
+				<sigWidth>16</sigWidth>
+				<sigDim>[16, 1]</sigDim>
+			</signal>
+		</SubSystem>
+		<SubSystem>
+			<Name>Reference Processing System</Name>
+			<xPCName>AimIII/Visual Feedback Controller/Reference Processing System</xPCName>
+			<SubSystem>
+				<Name>Compare
+To Constant</Name>
+				<xPCName>AimIII/Visual Feedback Controller/Reference Processing System/Compare To Constant</xPCName>
+				<block>
+					<blkName>Constant</blkName>
+					<xpcblkName>Visual Feedback Controller/Reference Processing System/Compare To Constant/Constant</xpcblkName>
+					<SLblockPath>AimIII/Visual Feedback Controller/Reference Processing System/Compare To Constant/Constant</SLblockPath>
+					<isSrc>[1 0 1]</isSrc>
+					<parameter>
+						<paramName>Value</paramName>
+						<dim>[1, 1]</dim>
+					</parameter>
+				</block>
+				<signal>
+					<sigName>Compare</sigName>
+					<xpcsigName>Visual Feedback Controller/Reference Processing System/Compare To Constant/Compare</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+			</SubSystem>
+			<SubSystem>
+				<Name>Compare
+To Constant1</Name>
+				<xPCName>AimIII/Visual Feedback Controller/Reference Processing System/Compare To Constant1</xPCName>
+				<block>
+					<blkName>Constant</blkName>
+					<xpcblkName>Visual Feedback Controller/Reference Processing System/Compare To Constant1/Constant</xpcblkName>
+					<SLblockPath>AimIII/Visual Feedback Controller/Reference Processing System/Compare To Constant1/Constant</SLblockPath>
+					<isSrc>[1 0 1]</isSrc>
+					<parameter>
+						<paramName>Value</paramName>
+						<dim>[1, 1]</dim>
+					</parameter>
+				</block>
+				<signal>
+					<sigName>Compare</sigName>
+					<xpcsigName>Visual Feedback Controller/Reference Processing System/Compare To Constant1/Compare</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+			</SubSystem>
+			<block>
+				<blkName>one</blkName>
+				<xpcblkName>Visual Feedback Controller/Reference Processing System/one</xpcblkName>
+				<SLblockPath>AimIII/Visual Feedback Controller/Reference Processing System/one</SLblockPath>
+				<isSrc>[1 0 1]</isSrc>
+				<parameter>
+					<paramName>Value</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>three</blkName>
+				<xpcblkName>Visual Feedback Controller/Reference Processing System/three</xpcblkName>
+				<SLblockPath>AimIII/Visual Feedback Controller/Reference Processing System/three</SLblockPath>
+				<isSrc>[1 0 1]</isSrc>
+				<parameter>
+					<paramName>Value</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>two</blkName>
+				<xpcblkName>Visual Feedback Controller/Reference Processing System/two</xpcblkName>
+				<SLblockPath>AimIII/Visual Feedback Controller/Reference Processing System/two</SLblockPath>
+				<isSrc>[1 0 1]</isSrc>
+				<parameter>
+					<paramName>Value</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>zero</blkName>
+				<xpcblkName>Visual Feedback Controller/Reference Processing System/zero</xpcblkName>
+				<SLblockPath>AimIII/Visual Feedback Controller/Reference Processing System/zero</SLblockPath>
+				<isSrc>[1 0 1]</isSrc>
+				<parameter>
+					<paramName>Value</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>Dead Zone</blkName>
+				<xpcblkName>Visual Feedback Controller/Reference Processing System/Dead Zone</xpcblkName>
+				<SLblockPath>AimIII/Visual Feedback Controller/Reference Processing System/Dead Zone</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>LowerValue</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+				<parameter>
+					<paramName>UpperValue</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>Switch</blkName>
+				<xpcblkName>Visual Feedback Controller/Reference Processing System/Switch</xpcblkName>
+				<SLblockPath>AimIII/Visual Feedback Controller/Reference Processing System/Switch</SLblockPath>
+				<isSrc>[0 3 1]</isSrc>
+				<parameter>
+					<paramName>Threshold</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>Switch2</blkName>
+				<xpcblkName>Visual Feedback Controller/Reference Processing System/Switch2</xpcblkName>
+				<SLblockPath>AimIII/Visual Feedback Controller/Reference Processing System/Switch2</SLblockPath>
+				<isSrc>[0 3 1]</isSrc>
+				<parameter>
+					<paramName>Threshold</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>Switch3</blkName>
+				<xpcblkName>Visual Feedback Controller/Reference Processing System/Switch3</xpcblkName>
+				<SLblockPath>AimIII/Visual Feedback Controller/Reference Processing System/Switch3</SLblockPath>
+				<isSrc>[0 3 1]</isSrc>
+				<parameter>
+					<paramName>Threshold</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<signal>
+				<sigName>Dead Zone</sigName>
+				<xpcsigName>Visual Feedback Controller/Reference Processing System/Dead Zone</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>scope_multiport_switch
+First input is the desired position
+Second inpt is the measured position
+Third input is measured Torque
+Fourth input is visual feedback signal1</sigName>
+				<xpcsigName>Visual Feedback Controller/Reference Processing System/scope_multiport_switch First input is the desired position Second inpt is the measured position Third input is measured Torque Fourth input is visual feedback signal1</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sign</sigName>
+				<xpcsigName>Visual Feedback Controller/Reference Processing System/Sign</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Add</sigName>
+				<xpcsigName>Visual Feedback Controller/Reference Processing System/Add</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Switch</sigName>
+				<xpcsigName>Visual Feedback Controller/Reference Processing System/Switch</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Switch1</sigName>
+				<xpcsigName>Visual Feedback Controller/Reference Processing System/Switch1</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Switch2</sigName>
+				<xpcsigName>Visual Feedback Controller/Reference Processing System/Switch2</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Switch3</sigName>
+				<xpcsigName>Visual Feedback Controller/Reference Processing System/Switch3</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+		</SubSystem>
+		<block>
+			<blkName>zero</blkName>
+			<xpcblkName>Visual Feedback Controller/zero</xpcblkName>
+			<SLblockPath>AimIII/Visual Feedback Controller/zero</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Pulse
+Generator</blkName>
+			<xpcblkName>Visual Feedback Controller/Pulse Generator</xpcblkName>
+			<SLblockPath>AimIII/Visual Feedback Controller/Pulse Generator</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Amplitude</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>Period</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>PulseWidth</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>PhaseDelay</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>ten</blkName>
+			<xpcblkName>Visual Feedback Controller/ten</xpcblkName>
+			<SLblockPath>AimIII/Visual Feedback Controller/ten</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>Gain</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>ten1</blkName>
+			<xpcblkName>Visual Feedback Controller/ten1</xpcblkName>
+			<SLblockPath>AimIII/Visual Feedback Controller/ten1</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>Gain</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>volt_to_tq</blkName>
+			<xpcblkName>Visual Feedback Controller/volt_to_tq</xpcblkName>
+			<SLblockPath>AimIII/Visual Feedback Controller/volt_to_tq</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>Gain</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Cut-off 0.7 Hz</blkName>
+			<xpcblkName>Visual Feedback Controller/Cut-off 0.7 Hz</xpcblkName>
+			<SLblockPath>AimIII/Visual Feedback Controller/Cut-off 0.7 Hz</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>A</paramName>
+				<dim>[15, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>B</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>C</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>X0</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<signal>
+			<sigName>Abs</sigName>
+			<xpcsigName>Visual Feedback Controller/Abs</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>zero</sigName>
+			<xpcsigName>Visual Feedback Controller/zero</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Pulse
+Generator</sigName>
+			<xpcsigName>Visual Feedback Controller/Pulse Generator</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>ten</sigName>
+			<xpcsigName>Visual Feedback Controller/ten</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>ten1</sigName>
+			<xpcsigName>Visual Feedback Controller/ten1</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>volt_to_tq</sigName>
+			<xpcsigName>Visual Feedback Controller/volt_to_tq</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>scope_multiport_switch
+First input is the desired position
+Second inpt is the measured position
+Third input is measured Torque
+Fourth input is visual feedback signal</sigName>
+			<xpcsigName>Visual Feedback Controller/scope_multiport_switch First input is the desired position Second inpt is the measured position Third input is measured Torque Fourth input is visual feedback signal</xpcsigName>
+			<sigWidth>2</sigWidth>
+			<sigDim>[2, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Divide</sigName>
+			<xpcsigName>Visual Feedback Controller/Divide</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Divide1</sigName>
+			<xpcsigName>Visual Feedback Controller/Divide1</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Cut-off 0.7 Hz</sigName>
+			<xpcsigName>Visual Feedback Controller/Cut-off 0.7 Hz</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Sum4</sigName>
+			<xpcsigName>Visual Feedback Controller/Sum4</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Sum5</sigName>
+			<xpcsigName>Visual Feedback Controller/Sum5</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+	</SubSystem>
+	<block>
+		<blkName>Buffer</blkName>
+		<xpcblkName>Buffer</xpcblkName>
+		<SLblockPath>AimIII/Buffer</SLblockPath>
+		<isSrc>[1 0 1]</isSrc>
+		<parameter>
+			<paramName>Value</paramName>
+			<dim>[10000, 3]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>Command 1</blkName>
+		<xpcblkName>Command 1</xpcblkName>
+		<SLblockPath>AimIII/Command 1</SLblockPath>
+		<isSrc>[1 0 1]</isSrc>
+		<parameter>
+			<paramName>Value</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>FwdFlow_Use</blkName>
+		<xpcblkName>FwdFlow_Use</xpcblkName>
+		<SLblockPath>AimIII/FwdFlow_Use</SLblockPath>
+		<isSrc>[1 0 1]</isSrc>
+		<parameter>
+			<paramName>Value</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>MVC_DF</blkName>
+		<xpcblkName>MVC_DF</xpcblkName>
+		<SLblockPath>AimIII/MVC_DF</SLblockPath>
+		<isSrc>[1 0 1]</isSrc>
+		<parameter>
+			<paramName>Value</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>MVC_PF</blkName>
+		<xpcblkName>MVC_PF</xpcblkName>
+		<SLblockPath>AimIII/MVC_PF</SLblockPath>
+		<isSrc>[1 0 1]</isSrc>
+		<parameter>
+			<paramName>Value</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>NumActuators</blkName>
+		<xpcblkName>NumActuators</xpcblkName>
+		<SLblockPath>AimIII/NumActuators</SLblockPath>
+		<isSrc>[1 0 1]</isSrc>
+		<parameter>
+			<paramName>Value</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>POS_Offset</blkName>
+		<xpcblkName>POS_Offset</xpcblkName>
+		<SLblockPath>AimIII/POS_Offset</SLblockPath>
+		<isSrc>[1 0 1]</isSrc>
+		<parameter>
+			<paramName>Value</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>Sample_Trigger</blkName>
+		<xpcblkName>Sample_Trigger</xpcblkName>
+		<SLblockPath>AimIII/Sample_Trigger</SLblockPath>
+		<isSrc>[1 0 1]</isSrc>
+		<parameter>
+			<paramName>Value</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>Scope_offset</blkName>
+		<xpcblkName>Scope_offset</xpcblkName>
+		<SLblockPath>AimIII/Scope_offset</SLblockPath>
+		<isSrc>[1 0 1]</isSrc>
+		<parameter>
+			<paramName>Value</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>Trigger 1</blkName>
+		<xpcblkName>Trigger 1</xpcblkName>
+		<SLblockPath>AimIII/Trigger 1</SLblockPath>
+		<isSrc>[1 0 1]</isSrc>
+		<parameter>
+			<paramName>Value</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>passive_tq</blkName>
+		<xpcblkName>passive_tq</xpcblkName>
+		<SLblockPath>AimIII/passive_tq</SLblockPath>
+		<isSrc>[1 0 1]</isSrc>
+		<parameter>
+			<paramName>Value</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>position_switch</blkName>
+		<xpcblkName>position_switch</xpcblkName>
+		<SLblockPath>AimIII/position_switch</SLblockPath>
+		<isSrc>[1 0 1]</isSrc>
+		<parameter>
+			<paramName>Value</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>scale_visual_feedback</blkName>
+		<xpcblkName>scale_visual_feedback</xpcblkName>
+		<SLblockPath>AimIII/scale_visual_feedback</SLblockPath>
+		<isSrc>[1 0 1]</isSrc>
+		<parameter>
+			<paramName>Value</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>scope_switch_signal</blkName>
+		<xpcblkName>scope_switch_signal</xpcblkName>
+		<SLblockPath>AimIII/scope_switch_signal</SLblockPath>
+		<isSrc>[1 0 1]</isSrc>
+		<parameter>
+			<paramName>Value</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>visual_select</blkName>
+		<xpcblkName>visual_select</xpcblkName>
+		<SLblockPath>AimIII/visual_select</SLblockPath>
+		<isSrc>[1 0 1]</isSrc>
+		<parameter>
+			<paramName>Value</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>zero1</blkName>
+		<xpcblkName>zero1</xpcblkName>
+		<SLblockPath>AimIII/zero1</SLblockPath>
+		<isSrc>[1 0 1]</isSrc>
+		<parameter>
+			<paramName>Value</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>FwdFlow_Stat</blkName>
+		<xpcblkName>FwdFlow_Stat</xpcblkName>
+		<SLblockPath>AimIII/FwdFlow_Stat</SLblockPath>
+		<isSrc>[0 1 1]</isSrc>
+		<parameter>
+			<paramName>Gain</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>Scope_gain</blkName>
+		<xpcblkName>Scope_gain</xpcblkName>
+		<SLblockPath>AimIII/Scope_gain</SLblockPath>
+		<isSrc>[0 1 1]</isSrc>
+		<parameter>
+			<paramName>Gain</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>PCIM-DAS1602 16 1</blkName>
+		<xpcblkName>PCIM-DAS1602 16 1</xpcblkName>
+		<SLblockPath>AimIII/PCIM-DAS1602 16 1</SLblockPath>
+		<isSrc>[1 0 6]</isSrc>
+		<parameter>
+			<paramName>P1</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P2</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P3</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P4</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P5</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P6</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P7</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P8</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P9</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>PCIM-DDA06 16 </blkName>
+		<xpcblkName>PCIM-DDA06 16 </xpcblkName>
+		<SLblockPath>AimIII/PCIM-DDA06 16 </SLblockPath>
+		<isSrc>[0 6 0]</isSrc>
+		<parameter>
+			<paramName>P1</paramName>
+			<dim>[1, 6]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P2</paramName>
+			<dim>[1, 6]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P3</paramName>
+			<dim>[1, 6]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P4</paramName>
+			<dim>[1, 6]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P5</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P6</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P7</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>PCIM-DDA06 16 2</blkName>
+		<xpcblkName>PCIM-DDA06 16 2</xpcblkName>
+		<SLblockPath>AimIII/PCIM-DDA06 16 2</SLblockPath>
+		<isSrc>[1 0 1]</isSrc>
+		<parameter>
+			<paramName>P1</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P2</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P3</paramName>
+			<dim>[1, 3]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P4</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P5</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P6</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P7</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+		<parameter>
+			<paramName>P8</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>Switch</blkName>
+		<xpcblkName>Switch</xpcblkName>
+		<SLblockPath>AimIII/Switch</SLblockPath>
+		<isSrc>[0 3 1]</isSrc>
+		<parameter>
+			<paramName>Threshold</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<block>
+		<blkName>Switch1</blkName>
+		<xpcblkName>Switch1</xpcblkName>
+		<SLblockPath>AimIII/Switch1</SLblockPath>
+		<isSrc>[0 3 1]</isSrc>
+		<parameter>
+			<paramName>Threshold</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<signal>
+		<sigName>NumActuators</sigName>
+		<xpcsigName>NumActuators</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+	<signal>
+		<sigName>POS_Offset</sigName>
+		<xpcsigName>POS_Offset</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+	<signal>
+		<sigName>Scope_offset</sigName>
+		<xpcsigName>Scope_offset</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+	<signal>
+		<sigName>scope_switch_signal</sigName>
+		<xpcsigName>scope_switch_signal</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+	<signal>
+		<sigName>visual_select</sigName>
+		<xpcsigName>visual_select</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+	<signal>
+		<sigName>FwdFlow_Stat</sigName>
+		<xpcsigName>FwdFlow_Stat</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+	<signal>
+		<sigName>Scope_gain</sigName>
+		<xpcsigName>Scope_gain</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+	<signal>
+		<sigName>scope_multiport_switch
+First input is the desired position
+Second inpt is the measured position
+Third input is measured Torque
+Fourth input is visual feedback signal</sigName>
+		<xpcsigName>scope_multiport_switch First input is the desired position Second inpt is the measured position Third input is measured Torque Fourth input is visual feedback signal</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+	<signal>
+		<sigName>PCIM-DAS1602 16 1/p1</sigName>
+		<xpcsigName>PCIM-DAS1602 16 1/p1</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+	<signal>
+		<sigName>PCIM-DAS1602 16 1/p2</sigName>
+		<xpcsigName>PCIM-DAS1602 16 1/p2</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+		<sigLabel>Torque</sigLabel>
+	</signal>
+	<signal>
+		<sigName>PCIM-DAS1602 16 1/p3</sigName>
+		<xpcsigName>PCIM-DAS1602 16 1/p3</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+	<signal>
+		<sigName>PCIM-DAS1602 16 1/p4</sigName>
+		<xpcsigName>PCIM-DAS1602 16 1/p4</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+		<sigLabel>Position</sigLabel>
+	</signal>
+	<signal>
+		<sigName>PCIM-DAS1602 16 1/p5</sigName>
+		<xpcsigName>PCIM-DAS1602 16 1/p5</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+	<signal>
+		<sigName>PCIM-DAS1602 16 1/p6</sigName>
+		<xpcsigName>PCIM-DAS1602 16 1/p6</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+	<signal>
+		<sigName>PCIM-DDA06 16 2</sigName>
+		<xpcsigName>PCIM-DDA06 16 2</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+	<signal>
+		<sigName>Stim1/p1</sigName>
+		<xpcsigName>Stim1/p1</xpcsigName>
+		<sigWidth>3</sigWidth>
+		<sigDim>[3, 1]</sigDim>
+	</signal>
+	<signal>
+		<sigName>Stim1/p2</sigName>
+		<xpcsigName>Stim1/p2</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+	<signal>
+		<sigName>Stim1/p3</sigName>
+		<xpcsigName>Stim1/p3</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+	<signal>
+		<sigName>Sum1</sigName>
+		<xpcsigName>Sum1</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+	<signal>
+		<sigName>Sum2</sigName>
+		<xpcsigName>Sum2</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+	<signal>
+		<sigName>Switch</sigName>
+		<xpcsigName>Switch</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+	<signal>
+		<sigName>Switch1</sigName>
+		<xpcsigName>Switch1</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+	<signal>
+		<sigName>Buffer
+Width</sigName>
+		<xpcsigName>Buffer Width</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+</Root>

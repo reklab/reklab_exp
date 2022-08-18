@@ -1,0 +1,37 @@
+! $Revision: 1.6 $
+
+c1{1}='Left Position';
+c1{2}='Left Torque';
+c1{3}='Desired Position (A) Right Position (B)';
+c1{4}='Right Torque (B)';
+c1{5}='Digital Out 1 (B)';
+c1{6}= 'Fz (A) Digital Out 2 (B)';
+c1{7}='Load Cell 1 (A) Digital Out 3 (B)';
+c1{8}='Load Cell 2 (A) Mux 7 (B)';
+c2{1}='EMG 1';
+c2{2}='EMG 2';
+c2{3}='EMG 3';
+c2{4}='EMG 4';
+c2{5}='EMG 5';
+c2{6}='EMG 6';
+c2{7}='EMG 7';
+c2{8}='EMG 8';
+c3{1}='Tibia';
+c3{2}='Femur';
+c3{3}='Sacrum';
+c3{4}='Heel';
+c3{5}='Not Connected';
+c3{6}='Not Connected';
+c3{7}='Position (Grip)';
+c3{8}='Not Connected';
+c4{1} = 'Left Load Cell 1';
+c4{2} = 'Left Load Cell 2';
+c4{3} = 'Left Load Cell 3';
+c4{4} = 'Left Load Cell 4';
+c4{5} = 'Right Load Cell 1';
+c4{6} = 'Right Load Cell 2';
+c4{7} = 'Right Load Cell 3';
+c4{8} = 'Right Load Cell 4';
+
+C=[c1';c2';c3';c4'];
+
